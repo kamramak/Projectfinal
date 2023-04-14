@@ -698,7 +698,7 @@ int main(int argc,char* argv[])
 	}
 
 
-	operators_list.open("./key_words.txt",ios::in);
+	operators_list.open(""C:\\Users\\project4\\LoginRepository\\LoginRepository\\Projectfinal\\key_words.txt",ios::in);
 	unordered_set<string> keywords;
 
 	string key;
@@ -721,12 +721,12 @@ int main(int argc,char* argv[])
 	DIR *dir;
 	struct dirent *en;
 	string en1;
-	cout<<"enter the folder path:\n";
+	//cout<<"enter the folder path:\n";
 
 	char *dir_path=new char[100];
 	cin.sync();
 //	cin.clear();
-	cout<<"Enter the folder path which contains cpp files\n";
+	//cout<<"Enter the folder path which contains cpp files\n";
 	dir_path=argv[2];
 	cout<<dir_path<<":dir_path\n";
 
