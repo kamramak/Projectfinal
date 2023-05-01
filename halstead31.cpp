@@ -698,7 +698,7 @@ int main(int argc,char* argv[])
 	}
 
 
-	operators_list.open("C:\\Users\\project4\\LoginRepository\\LoginRepository\\Projectfinal\\key_words.txt",ios::in);
+	operators_list.open("./key_words.txt",ios::in);
 	unordered_set<string> keywords;
 
 	string key;
