@@ -645,11 +645,24 @@ void checkDir(string dir_path,string en1,unordered_set<string> &keywords)
 		{
 			en2=en->d_name;
 			cout<<":"<<en2<<":";
-			if( (en2.find(".cpp") != -1))//only read cpp
+			if( (en2.find(".cpp") != -1)) // all filesread 
 			{
 				checkValuesOfThefile(path,en2,keywords);
 
 			}
+			else if((en2.find(".java") != -1))
+			{
+				checkValuesOfThefile(path,en2,keywords);
+			}
+			else if((en2.find(".js") != -1))
+			{
+				checkValuesOfThefile(path,en2,keywords);
+			}
+			else if((en2.find(".ts") != -1))
+			{
+				checkValuesOfThefile(path,en2,keywords);
+			}
+
 			else
 			{
 				if(en2[0]=='.')
